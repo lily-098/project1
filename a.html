@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="a.css" type="text/css">
+    </head>
+    <body>
+        <h1 id="head">
+            MMMUT Resource Center 
+        </h1>
+        <div class="row">
+            <div class="coloumn">
+                <a href="#">Home</a>
+                
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <br>
+        <div class="image" id="slideshow">
+            
+            <img src="images/mmm1.jpg" width="400" height="400"  class="active">
+            <img src="images/mmm2.jpg" width="400" height="400">
+            <img src="images/mmmut.jpg" width="800" height="300">
+            <img src="images/mmm3.jpeg" width="400" height="400">
+        </div>
+        <div class="icons">
+            <ul class="controls">
+                <li><a><img src="images/left.jpg" height="30" width="30" onclick="prevSlide();"></a></li>
+                <li><a><img src="images/images.jpeg" height="30" width="30" onclick="nextSlide();"></a></li>
+            </ul>
+        </div>
+    <br>
+        <div class="intro">
+            <br>
+            <p>&nbsp;MMMUT Resource Center provides the study material for free to the students (freshers)
+                so that they could study smoothly and secuely.
+                <br>
+               <br> It provides the flatform where students can access the previous year question paper of minors
+                and majors both,roadmaps of learning programs and other courses,mentors session,youtube
+                lectures,book pdfs etc.
+                <br>
+                <br>It provides the platforms to the students where they can easily manage their targets and maintain
+               their dashboard acoording to them.
+            </p>
+        </div>
+        <br>
+        <div class="courses">
+            <div class="h">
+                <h1>Courses </h1>
+            </div>
+            <div class="r1">
+                    <figure>
+                    <a href="cse.html"><img src="images/cse.jpeg" height="200" width="200"></a>
+                    <figcaption>Computer Science and engineering</figcaption></figure>
+                    <figure>
+                    <a href="it.html"><img src="images/it.jpg" height="200" width="200"></a>
+                    <figcaption>Information Technology</figcaption></figure>
+                    <figure>
+                    <a href="ece.html"><img src="images/ece.jpg" height="200" width="200"></a>
+                    <figcaption>Electronic and communication</figcaption></figure>
+                
+            </div><br>
+            <div class="r2">
+                    <figure>
+                    <a href="ee.html"><img src="images/ee.jpg" height="200" width="200"></a>
+                    <figcaption>Electrical engineering</figcaption></figure>
+                    <figure>
+                    <a href="ce.html"><img src="images/ce.jpg" height="200" width="200"></a>
+                    <figcaption>Civil engineering</figcaption></figure>
+                    <figure>
+                    <a href="me.html"><img src="images/me.jpg" height="200" width="200"></a>
+                    <figcaption>Mechanical engineering</figcaption></figure>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="foot">
+        &lt;&lt;&lt;&nbsp;&copy; Aditi Pandey &gt;&gt;&gt;
+        </div>
+
+        <script type="text/javascript">
+            var slideshow= document.getElementById('slideshow');
+            var slides=slideshow.getElementsByTagName('img');
+            var index=0;
+
+            function nextSlide()
+            {
+                slides[index].classList.remove('active');
+                index=(index +  1) % slides.length;
+                slides[index].classList.add('active');
+            }
+
+            function prevSlide()
+            {
+                slides[index].classList.remove('active');
+                index=(index-1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+        </script>
+    </body>
+</html>

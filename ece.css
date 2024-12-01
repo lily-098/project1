@@ -1,0 +1,66 @@
+body{
+    background-color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+.ece{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+     width: 50%;
+    
+}
+.ee{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+     width: 50%;
+    
+}
+.h1{
+    background-color: orangered;
+    color: antiquewhite;
+    font-size: 30px;
+}
+.maths{
+    display: flex;
+    justify-content:space-around;
+}
+.pdf1{
+    border: 2px solid blue;
+    border-radius: 10px;
+    height: auto;
+    width: 80%;
+    margin-left:10%;
+}
+.h2{
+    text-align: center;
+    background-color: gold;
+}
+.bec{
+    display: flex;
+    justify-content:space-around;
+}
+.bh{
+    color: black;
+     font-size: 30px;
+     font-weight: bold;
+     animation-fill-mode: backwards;
+}
+.bee{
+    display: flex;
+    justify-content:space-around;
+}
+.bhs{
+    display: flex;
+    justify-content:space-around;
+}
+.f{
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: crimson;
+}

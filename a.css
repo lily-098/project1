@@ -1,0 +1,99 @@
+body{
+    background-image: url("images/backgr.jpg");
+    background-repeat:no-repeat ;
+background-attachment: fixed;
+background-size:100% 100%;
+}
+.coloumn{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+a:link{color: antiquewhite;}
+a:hover{color: red;}
+a.active{color:palevioletred};
+a.visited{color: yellow;}
+#head{
+    height: 10%;
+   
+    color: antiquewhite;
+    background-color: black;
+    text-align: center;
+    font-size: 40px; 
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.image{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    
+}
+.image img{
+position: absolute;
+top: 0;
+left: 20%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: 0.5s;
+opacity: 0;
+}
+.image img.active{
+    opacity: 1;
+}
+.controls li
+{
+    list-style: none;
+    cursor: pointer;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+}
+.controls li:hover{
+    opacity: 0.5;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro{
+    color: antiquewhite;
+    font-size: 25px;
+    background-image:url("images/intro3.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 310px;
+    width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.courses{
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: antiquewhite;
+}
+.r1{
+    display: flex;
+    justify-content:space-around;
+}
+.r2{
+    display: flex;
+    justify-content: space-around;
+}
+.h{
+    background-color: black;
+    text-align: center;
+}
+.foot{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 32px;
+    font-style: italic;
+}
